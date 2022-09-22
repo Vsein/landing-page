@@ -13,14 +13,14 @@ body {
 .top, .footer {
   flex: 1;
   background-color: #1F2937;
-  padding: 0 200px;
 }
 
 .header {
   display: flex;
+  width: min(100% - 2em, 800px);
   justify-content: space-between;
   align-items: center;
-  margin: 5px 0;
+  margin: 5px auto;
 }
 
 .logo {
@@ -38,12 +38,17 @@ ul {
   display: flex;
   list-style-type: none;
   gap: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 .intro {
   display: flex;
-  margin: 120px 0;
+  width: min(100% - 2em, 800px);
+  margin: 120px auto;
   gap: 70px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .text {
@@ -94,8 +99,10 @@ ul {
 
 .perks {
   display: flex;
-  padding: 0 250px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  width: min(750px, 100% - 2em);
+  margin-inline: auto;
+  justify-content: center;
   align-items: center;
   gap: 30px;
   margin-bottom: 64px;
@@ -128,9 +135,10 @@ ul {
 }
 
 .adage-container {
-  max-width: 700px;
   margin: 110px auto;
   display: flex;
+  flex-wrap: wrap;
+  width: min(700px, 100% - 2em);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -158,13 +166,14 @@ ul {
 }
 
 .lastcall-content {
-  padding: 50px 100px;
-  margin: 64px 0;
+  width: min(700px, 100% - 2em);
+  padding: 50px;
+  margin: 64px;
   display: flex;
+  flex-wrap: wrap;
   gap: 50px;
   justify-content: space-between;
   background-color: #3882F6;
-  max-width: 700px;
   border-radius: 8px;
 }
 
